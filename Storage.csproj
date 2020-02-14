@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <RootNamespace>Octo.DataDignity.Commonlib.Storage</RootNamespace>
+    <AssemblyName>Octo.DataDignity.Commonlib.Storage</AssemblyName>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.4.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Ini" Version="3.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="3.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="3.0.1" />
+    <ProjectReference Include="..\DataDignityV1\backend\commonlib\Diagnostics\Diagnostics.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataDignityV1\backend\commonlib\Diagnostics\Diagnostics.csproj" />
+  </ItemGroup>
+    <ItemGroup>
+        <None Include="appSettings.ini">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
+</Project>
